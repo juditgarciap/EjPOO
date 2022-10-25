@@ -1,7 +1,7 @@
 class vehiculo():
     def __innit__ (self, color,rueda):
         self.color = color
-        self.rueda = rueda
+        self.ruedas = ruedas
     
 class Coche (vehiculo):
     def __init__(self, color,rueda,velocidad,cilindrada):  
@@ -14,7 +14,7 @@ class Coche (vehiculo):
 
 class camioneta (Coche):
     def __init__(self, color, rueda, velocidad, cilindrada,carga):
-        Coche().__init__(self, color, rueda, velocidad, cilindrada)
+        Coche().__init__(self, color, ruedas, velocidad, cilindrada)
         self.carga= carga
 
     def __str__ (self):
@@ -22,5 +22,6 @@ class camioneta (Coche):
 
 
 class Bicicleta (vehiculo):
-
-
+    def __init__ (self,color,ruedas,tipo)
+    self.color = color
+    self.ruedas = ruedas 
