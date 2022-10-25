@@ -8,6 +8,8 @@ class Coche (vehiculo):
         vehiculo(). __init__(self,color,rueda)
         self.velocidad= velocidad  
         self.cilindrada= cilindrada
+    def __str__ (self):
+        return'coche color{}, numero de ruedas {}, velocidad {} y cilindrada{}'. format(self.color,self.ruedas,self.velocidad,self.cilindrada)
      
 
 class camioneta (Coche):
@@ -16,8 +18,9 @@ class camioneta (Coche):
         self.carga= carga
 
     def __str__ (self):
-        print('coche color{}, numero de ruedas {}, velocidad {} y cilindrada{}'. format(self.color,self.ruedas,self.velocidad,self.cilindrada))
+        return'coche color{}, numero de ruedas {}, velocidad {} , cilindrada{} y carga {}'. format(self.color,self.ruedas,self.velocidad,self.cilindrada, self.carga)
 
-        
+
+class Bicicleta (vehiculo):
 
 
