@@ -10,4 +10,14 @@ class Coche (vehiculo):
         self.cilindrada= cilindrada
      
 
+class camioneta (Coche):
+    def __init__(self, color, rueda, velocidad, cilindrada,carga):
+        Coche().__init__(self, color, rueda, velocidad, cilindrada)
+        self.carga= carga
+
+    def __str__ (self):
+        print('coche color{}, numero de ruedas {}, velocidad {} y cilindrada{}'. format(self.color,self.ruedas,self.velocidad,self.cilindrada))
+
+        
+
 
