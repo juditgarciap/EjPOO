@@ -2,13 +2,13 @@
 
 #Apartado 1 creamos las clases
 class vehiculo():
-    def __innit__ (self, color,rueda):
+    def __innit__ (self, color,ruedas):
         self.color = color
         self.ruedas = ruedas
     
 class Coche (vehiculo):
-    def __init__(self, color,rueda,velocidad,cilindrada):  
-        vehiculo(). __init__(self,color,rueda)
+    def __init__(self, color,ruedas,velocidad,cilindrada):  
+        vehiculo().__init__(self,color,ruedas)
         self.velocidad= velocidad  
         self.cilindrada= cilindrada
     def __str__ (self):
@@ -16,7 +16,7 @@ class Coche (vehiculo):
      
 
 class camioneta (Coche):
-    def __init__(self, color, rueda, velocidad, cilindrada,carga):
+    def __init__(self, color, ruedas, velocidad, cilindrada,carga):
         Coche().__init__(self, color, ruedas, velocidad, cilindrada)
         self.carga= carga
 
