@@ -1,3 +1,6 @@
+
+
+#Apartado 1 creamos las clases
 class vehiculo():
     def __innit__ (self, color,rueda):
         self.color = color
@@ -35,3 +38,8 @@ class Motocicleta (Bicicleta):
         Bicicleta.__init__(self,color,ruedas,tipo)
         self.velocidad=velocidad
         self.cilindrada = cilindrada
+
+    def __str__ (self):
+        return 'Moto tipo {} color {} ruedas {} velocidad {} cilindrada {}'.format(self.tipo, self.color, self.ruedas, self.velocidad, self.cilindrada)
+
+#Apartado 2 creamos función catalogar para identificr el tipo de vehículo 
