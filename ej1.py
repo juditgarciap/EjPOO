@@ -28,4 +28,10 @@ class Bicicleta (vehiculo):
 
     def __str__(self):
         return 'Bicicleta tipo {} color {} ruedas {}'.format(self.tipo, self.color,self.ruedas)
-        
+
+
+class Motocicleta (Bicicleta):
+    def __init__(self, color,ruedas,tipo,velocidad,cilindrada):
+        Bicicleta.__init__(self,color,ruedas,tipo)
+        self.velocidad=velocidad
+        self.cilindrada = cilindrada
