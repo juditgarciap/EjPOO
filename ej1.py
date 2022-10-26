@@ -48,4 +48,12 @@ def catalogar (lista_vehiculos):
         print ('Vehiculo es del tipo {}'.format(type(vehiculo).__name__))
         print (vehiculo)
 
-        
+
+#Apartado 3 funcion catalogar segunda versión 
+def catalogar2 (lista_vehiculos, num_ruedas = None) :
+    contador =0
+    if num_ruedas != None:
+        for vehiculo in lista_vehiculos:
+            if vehiculo.ruedas == num_ruedas:
+                contador =
+
