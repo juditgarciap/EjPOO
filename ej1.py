@@ -55,5 +55,17 @@ def catalogar2 (lista_vehiculos, num_ruedas = None) :
     if num_ruedas != None:
         for vehiculo in lista_vehiculos:
             if vehiculo.ruedas == num_ruedas:
-                contador =
+                contador = contador + 1
+                print ('Vehiculo es del tipo {}'.format(type(vehiculo).__name__))
+                print (vehiculo)
+
+        print ('se ha encontrado {} vehiculos con {} ruedas'.format (contador, num_ruedas))
+
+
+    else:
+     print ('Por favor ingresa un número de ruedas ')
+
+
+
+#ejemplos
 
