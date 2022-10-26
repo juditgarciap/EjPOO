@@ -43,3 +43,6 @@ class Motocicleta (Bicicleta):
         return 'Moto tipo {} color {} ruedas {} velocidad {} cilindrada {}'.format(self.tipo, self.color, self.ruedas, self.velocidad, self.cilindrada)
 
 #Apartado 2 creamos función catalogar para identificr el tipo de vehículo 
+def catalogar (lista_vehiculos):
+    for vehiculo in lista_vehiculos:
+        
