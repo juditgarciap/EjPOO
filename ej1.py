@@ -22,6 +22,10 @@ class camioneta (Coche):
 
 
 class Bicicleta (vehiculo):
-    def __init__ (self,color,ruedas,tipo)
-    self.color = color
-    self.ruedas = ruedas 
+    def __init__ (self,color,ruedas,tipo):
+        vehiculo.__init__(self, color, ruedas)
+        self.tipo = tipo
+
+    def __str__(self):
+        return 'Bicicleta tipo {} color {} ruedas {}'.format(self.tipo, self.color,self.ruedas)
+        
