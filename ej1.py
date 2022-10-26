@@ -45,4 +45,7 @@ class Motocicleta (Bicicleta):
 #Apartado 2 creamos función catalogar para identificr el tipo de vehículo 
 def catalogar (lista_vehiculos):
     for vehiculo in lista_vehiculos:
+        print ('Vehiculo es del tipo {}'.format(type(vehiculo).__name__))
+        print (vehiculo)
+
         
