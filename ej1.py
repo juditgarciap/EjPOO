@@ -71,15 +71,14 @@ def catalogar2 (lista_vehiculos, num_ruedas = None) :
 
 vehiculos = []
 
-vehiculo1 = Coche 
-vehiculo2 = Bicicleta
-vehiculo3 = camioneta
-vehiculo4 = Motocicleta 
+vehiculo1 = Coche ('Negro', 4, 500, 250)
+vehiculo2 = Bicicleta ('gris', 2, 'urbana')
+vehiculo3 = camioneta ('Dorada', 4, 150, 120, 500)
+vehiculo4 = Motocicleta ('amarilla', 2, 'deportiva', 200, 150)
 
 vehiculos.append(vehiculo1)
 vehiculos.append(vehiculo2)
 vehiculos.append(vehiculo3)
 vehiculos.append(vehiculo4)
 
-
-
+catalogar2 (vehiculos, num_ruedas=2)
