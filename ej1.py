@@ -67,5 +67,19 @@ def catalogar2 (lista_vehiculos, num_ruedas = None) :
 
 
 
-#ejemplos
+#ejemplos y lista para añadir
+
+vehiculos = []
+
+vehiculo1 = Coche 
+vehiculo2 = Bicicleta
+vehiculo3 = camioneta
+vehiculo4 = Motocicleta 
+
+vehiculos.append(vehiculo1)
+vehiculos.append(vehiculo2)
+vehiculos.append(vehiculo3)
+vehiculos.append(vehiculo4)
+
+
 
